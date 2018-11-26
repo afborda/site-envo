@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
+$azul-f: #001a4f;
+$azul-m: #002562;
+$verde-f: #6bcaca;
+$branco: #ffffff;
+$preto: #000000;
+
+
+
+$font-1: 'Yanone Kaffeesatz', sans-serif;
+
+@function em($pixel,$contexto : 16){
+    @return $pixel / $contexto + em;
+}
+
+@mixin tipo-1 ($size) {
+    font-family: $fonte-1;
+    @if $size == 18{
+        font-size:em(18);
+        line-height: em(30, 18);
+    }
+}
+@mixin tipo-2 ($size) {
+    font-family: $fonte-2;
+    @if $size == 18{
+        font-size: em(18);
+        line-height: em(30,18);
+    }
+    @else if $size == 24{
+        font-size:em(24);
+        line-height: em(30,24);
+    }
+}
