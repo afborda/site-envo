@@ -99,7 +99,6 @@ $s-device: 480px;
 @mixin container {
   max-width: $l-device;
   margin: 0px auto;
-  display: flex;
   @include device(m) {
     max-width: $m-device;
   }

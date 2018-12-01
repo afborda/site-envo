@@ -181,9 +181,6 @@ table {
 .container {
   max-width: 1366px;
   margin: 0px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1366px - 1) {
