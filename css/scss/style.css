@@ -250,7 +250,13 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px;
+  padding: 5px;
+}
+
+.superinfo p, .superinfo a {
+  margin: 0;
+  font-size: 0.7em;
+  color: #ffffff;
 }
 
 .slider-abner {
