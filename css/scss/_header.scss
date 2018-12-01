@@ -4,7 +4,16 @@
   color: $branco;
 }
 
-
+.superinfo{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+  p, a{
+     font-size: 0.7em;
+     color: $branco;
+  }
+}
 
 .slider-abner {
   position: relative;
