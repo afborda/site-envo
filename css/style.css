@@ -217,7 +217,9 @@ html, body {
   padding: 0;
   margin: 0;
 }
-
+section{
+  min-height: 100vh;
+}
 /* line 9, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_header.scss */
 slider {
   display: block;
@@ -266,3 +268,52 @@ slide:nth-child(3) {
 }
 
 /*# sourceMappingURL=../style.map */
+
+/**
+  * SECTION 1 NÃO É O HEADER ANIMALE
+  */
+.title-evento{
+  font-size: 36pt;
+}
+.sobre{
+  padding: 150px 31px;
+}
+.sobre div{
+  width: 100%;
+}
+.texto-sobre{
+  display:flex;
+  font-size: 17pt;
+  margin-top: 75px;
+}
+.texto-sobre li:nth-child(1){
+  margin-right: 10px;
+}
+.texto-sobre li:nth-child(2){
+  margin-left: 10px;
+}
+.cards-sobre{
+  margin-top: 75px;
+  display: flex;
+}
+.cards-sobre .card{
+  background: rgba(0, 0, 0, 0.11);
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 292px;
+  min-height: 300px;
+}
+.cards-sobre .card:nth-child(1),.cards-sobre .card:nth-child(2){
+  margin-right: 35px;
+}
+
+.cards-sobre .card .imagem_header{
+  padding: 10px 0 30px;;
+}
+.cards-sobre .card h1{
+  font-size: 19pt;
+  font-weight: bold;
+}
+.cards-sobre .card p{
+  color: #8a8a8a;
+}
