@@ -8,13 +8,17 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 5px;
+ padding: 10px;
   p, a{
      font-size: 0.7em;
      color: $branco;
   }
 }
 
+.img-logo-header{
+
+  margin-right: -50px;
+}
 .slider-abner {
   position: relative;
   overflow: hidden;
