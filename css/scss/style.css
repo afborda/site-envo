@@ -247,16 +247,27 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px;
 }
 
 .superinfo p, .superinfo a {
-  font-size: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.8em;
   color: #ffffff;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.logo-img {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .img-logo-header {
-  margin-right: -50px;
+  margin-right: 10px;
+  margin-top: 3px;
 }
 
 .slider-abner {
