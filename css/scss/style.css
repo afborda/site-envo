@@ -233,41 +233,41 @@ body {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-.superinfo-bg {
+body {
   background: #001a4f;
-  color: #ffffff;
 }
 
-.superinfo {
+.superinfo-bg {
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.superinfo p, .superinfo a {
+.superinfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 5px;
+}
+
+.superinfo p, .superinfo a {
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 0.8em;
   color: #ffffff;
-  margin-left: 20px;
-  margin-top: 5px;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .logo-img {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  padding: 3px;
 }
 
 .img-logo-header {
   margin-right: 10px;
-  margin-top: 3px;
 }
 
 .slider-abner {

@@ -1,28 +1,33 @@
 
-.superinfo-bg{
+body{
   background: $azul-f;
+}
+.superinfo-bg{
   color: $branco;
+  display: flex;
+  justify-content: space-between;
 }
 
 .superinfo{
   display: flex;
- justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 5px;
+ //justify-content: space-between;
+//flex-wrap: wrap;
   p, a{
-    display: flex;
+    font-family: $font-1;
      font-size: 0.8em;
      color: $branco;
-     margin-left: 20px;
-     margin-top: 5px;
+     text-decoration: none;
+     margin-right: 20px;
+
   }
 }
 .logo-img{
-  justify-content: flex-end;
+  padding: 3px;
 }
 .img-logo-header{
-  //float: right;
-  margin-right: 10px;
-  margin-top: 3px;
+margin-right: 10px;
+
 }
 .slider-abner {
   position: relative;
