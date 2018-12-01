@@ -1,6 +1,6 @@
 $cols: 12;
 $gutter: 20px;
-$l-device: 1200px;
+$l-device: 1366px;
 $m-device: 760px;
 $s-device: 480px;
 
@@ -99,7 +99,7 @@ $s-device: 480px;
 @mixin container {
   max-width: $l-device;
   margin: 0px auto;
-  position: relative;
+  display: flex;
   @include device(m) {
     max-width: $m-device;
   }
