@@ -4,7 +4,12 @@
   color: $branco;
 }
 
-
+.superinfo{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;;
+}
 
 .slider-abner {
   position: relative;
