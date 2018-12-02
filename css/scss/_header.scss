@@ -27,120 +27,56 @@ body{
 }
 .img-logo-header{
 margin-right: 10px;
-
-}
-.slider-abner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 100%;
-    animation: animate 30s linear infinite;
-    .slide {
-      position: relative;
-      width: 20%;
-      height: 100%;
-      float: left;
-      &.slider1 {
-        background: url("../../img/1.png");
-        background-size: cover;
-        background-position: center;
-      }
-      &.slider2 {
-        background: url("../../img/2.png");
-        background-size: cover;
-        background-position: center;
-      }
-      &.slider3 {
-        background: url("../../img/3.png");
-        background-size: cover;
-        background-position: center;
-      }
-      &.slider1 {
-        background: url("../../img/1.png");
-        background-size: cover;
-        background-position: center;
-      }
-      .caption {
-        position: absolute;
-        bottom: 10px;
-        left: 150px;
-        right: 60px;
-        padding: 30px;
-        
-        box-sizing: border-box;
-        h2 {
-          margin: 0 0 20px;
-          color: $branco;
-          font-size: 48px;
-        }
-        p {
-          color: $branco;
-          font-size: 16px;
-        }
-      }
-    }
-  }
-}
-
-@keyframes animate {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -300%;
-  }
 }
 
 
+//#########  Nav ################
 
-@media (max-width: 768px) {
-  .slider-abner {
-    .slider {
-      .slide {
-        .caption {
-          bottom: 20px;
-          left: 20px;
-          right: 20px;
-          padding: 20px;
-          h2 {
-            margin: 0 0 20px;
-            color: $branco;
-            font-size: 48px;
-          }
-          p {
-            color: $branco;
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  }
+
+.menu-bg{
+    background: rgba(0, 0, 0, 0)
 }
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu-logo-envo{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover{
+    color: #122ab2;
+}
+
+
+//############### Slider #######
+
+
+
+
+
+
+
+
 
