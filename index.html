@@ -8,8 +8,63 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>ENVO - Clinica de vacinação</title>
   </head>
+  <style>
+    .information{
+      color: white;
+      font-size: 9pt;
+      display: flex;
+      padding: 5px 0;
+    }
+    .information .info,.information .share{
+      display: flex;
+    }
+    .information .info div{
+      margin-right: 30px;
+    }
+    .info-telefone{
+      background-image: url(img_site/footer/telefone.png);
+      background-repeat: no-repeat;
+      padding-left: 10px;
+      background-position: 0 4px;
+      background-size: 8px;
+    }
+    .info-email{
+      background-image: url(img_site/footer/mail.png);
+      background-repeat: no-repeat;
+      padding-left: 12px;
+      background-position: 0 6px;
+      background-size: 8px;
+    }
+    .info-local{
+      background-image: url(img_site/footer/localizacao.png);
+      background-repeat: no-repeat;
+      padding-left: 12px;
+      background-position: 0 6px;
+      background-size: 8px;
+    }
+  </style>
   <body>
-<div class="information">
+<div class="information hide-on-med-and-down">
+  <div class="container">
+    <div class="row" style="margin:0;">
+      <div class="col m10">
+        <div class="info">
+          <div class="info-telefone">(51)99721-9419</div>
+          <div class="info-email">contato@envovacinas.com.br</div>
+          <div class="info-local">Rua Independência, 1331-Centro-São Leopoldo/RS</div>
+        </div>
+      </div>
+      <div class="col m2">
+        <div class="share">
+          <div class="instagram-item">envivacinas</div>
+          <div class="face-item">envivacinas</div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
 
 </div>
 
@@ -38,11 +93,6 @@
                                                                   width="19"/></button>
     <button class="display-right" onclick="addCountImage(+1)"><img src="img_site/Head/direita.png" height="39"
                                                                    width="19"/></button>
-    <!--<div class="container">-->
-    <!--<div class="bem-vindo ">-->
-      <!--<img src="img_site/Head/bem-vindo.png" height="89" width="918"/>-->
-    <!--</div>-->
-    <!--</div>-->
   </header>
   <section class="min-height">
     <div class="down-arrow"></div>
