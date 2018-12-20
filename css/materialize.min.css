@@ -5986,11 +5986,6 @@ input:not([type]):disabled + label, input:not([type])[readonly="readonly"] + lab
     color: rgba(0, 0, 0, 0.42)
 }
 
-input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #26a69a;
-    -webkit-box-shadow: 0 1px 0 0 #26a69a;
-    box-shadow: 0 1px 0 0 #26a69a
-}
 
 input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
     color: #26a69a
@@ -6605,18 +6600,6 @@ textarea.materialize-textarea {
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)
 }
 
-input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before, input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before {
-    -webkit-transform: scale(2.4);
-    transform: scale(2.4);
-    background-color: rgba(38, 166, 154, 0.15)
-}
-
-input[type=checkbox]:not(:disabled) ~ .lever:active:before, input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
-    -webkit-transform: scale(2.4);
-    transform: scale(2.4);
-    background-color: rgba(0, 0, 0, 0.08)
-}
-
 .switch input[type=checkbox][disabled] + .lever {
     cursor: default;
     background-color: rgba(0, 0, 0, 0.12)
@@ -6677,10 +6660,6 @@ select {
     z-index: 1
 }
 
-.select-wrapper input.select-dropdown:focus {
-    border-bottom: 1px solid #26a69a
-}
-
 .select-wrapper .caret {
     position: absolute;
     right: 0;
@@ -6725,10 +6704,6 @@ select:disabled {
 .select-dropdown li.disabled, .select-dropdown li.disabled > span, .select-dropdown li.optgroup {
     color: rgba(0, 0, 0, 0.3);
     background-color: transparent
-}
-
-body.keyboard-focused .select-dropdown.dropdown-content li:focus {
-    background-color: rgba(0, 0, 0, 0.08)
 }
 
 .select-dropdown.dropdown-content li:hover {

@@ -8,73 +8,23 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>ENVO - Clinica de vacinação</title>
   </head>
-  <style>
-
-    .footer{
-      background: transparent;
-      padding: 50px 0 7px 0;
-    }
-
-    .telefone-item{
-      background-image: url(img_site/footer/telefone.png);
-      background-repeat: no-repeat;
-      padding-left: 20px;
-      background-position: 0px 7px;
-      background-size: 4%;
-    }
-    .footer .email-item{
-      background-image: url('img_site/footer/mail.png');
-      background-repeat: no-repeat;
-      padding-left: 20px;
-      background-position: 0px 7px;
-      background-size: 4%;
-    }
-    .footer .endereco-item{
-      background-image: url('img_site/footer/localizacao.png');
-      background-repeat: no-repeat;
-      padding-left: 20px;
-      background-position: 0px 7px;
-    }
-    .footer .instagram-item{
-      background-image: url('img_site/footer/intagram-logo.png');
-      background-repeat: no-repeat;
-      padding-left: 20px;
-      background-position: 0px 7px;
-    }
-    .footer .face-item{
-      background-image: url('img_site/footer/face-logo.png');
-      background-repeat: no-repeat;
-      padding-left: 20px;
-      background-position: 0px 7px;
-
-    }
-    .footer {
-      color: white;
-    }
-    .footer ol{
-      margin-top: 35px;
-    }
-
-    .footer ol.text li {
-      margin-bottom: 20px;
-    }
-    .footer-copyright{
-      padding: 25px;
-      background-color: #031d4f;
-    }</style>
   <body>
-  <ul id="mobile-demo" class="sidenav">
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Sobre</a></li>
-    <li><a href="#">Locais</a></li>
-    <li><a href="#">Vacinas</a></li>
-    <li><a href="#">Contato</a></li>
-  </ul>
+<div class="information">
+
+</div>
+
   <header class="slide">
     <div class="container" >
         <nav class="nav-wrapper" >
           <a href="#" class="brand-logo"><img src="img_site/Head/logo.png"></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Locais</a></li>
+            <li><a href="#">Vacinas</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+          <ul id="mobile-demo" class="sidenav">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Locais</a></li>
@@ -210,7 +160,7 @@
 
             </div>
             <div class="input">
-              <textarea>
+              <textarea style="border: none;">
                 Mensagem
               </textarea>
             </div>
@@ -256,22 +206,77 @@
         </div>
         <div class="col m12 l8">
           <h6>Depoimentos</h6>
+          <div class="slider-depoimentos">
+            <div class="slider-item mensagem">
+              <p>A clínica presta um otímo trabalho eprimei  de qualidade, indico para pessoas que estão procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
+              <div class="infomensagem">
+                <div class="nome">Celso Silva</div>
+                <div class="cidade">SãoLeopoldo/RS</div>
+              </div>
+            </div>
+            <div class="slider-item mensagem">
+              <p>A clínica presta um otímo segundo trabalho e de qualidade, indico para pessoas que estão procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
+              <div class="infomensagem">
+                <div class="nome">Celso Silva</div>
+                <div class="cidade">SãoLeopoldo/RS</div>
+              </div>
+            </div>
+            <div class="slider-item mensagem">
+              <p>A clínica presta um otímo trabalho terceiro e de qualidade, indico para pessoas que estão procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
+              <div class="infomensagem">
+                <div class="nome">Celso Silva</div>
+                <div class="cidade">SãoLeopoldo/RS</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="nav-slider">
+            <div class="it">
+              <span class="nav-depoimentos" onclick="currentDiv(1)"></span>
+              <span class="nav-depoimentos" onclick="currentDiv(2)"></span>
+              <span class="nav-depoimentos" onclick="currentDiv(3)"></span>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
 
   </section>
   <section class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+          ©Envo-Clínica de Vacinas -2018
+        </div>
+        <div class="col s6">
+          <div class="logo-prod">
+           <div class="images">
+             <img src="img_site/footer/abner-logo.png" height="25" width="28"/>
+             <img src="img_site/footer/douglas-logo.png" height="25" width="17"/>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/slider-depoimentos.js"></script>
   <script>
     var options= {};
       document.addEventListener('DOMContentLoaded', function() {
           var elems = document.querySelectorAll('.sidenav');
           var instances = M.Sidenav.init(elems, options);
       });
+    /*************************************************/
+    /*****************slider header *******************/
+    /*************************************************/
     var slider =[
         "url('img_site/Head/slider/Imagem1.png')",
         "url('img_site/Head/slider/Imagem2.png')",
@@ -279,7 +284,12 @@
     ];
     var slideIndex = 0;
     showImageSlider(slideIndex);
-      carousel();
+    carousel();
+    /*************************************************/
+    /**************** slider depoimentos *************/
+    /*************************************************/
+    var slideDepoIndex = 0;
+    showDivs(slideDepoIndex);
   </script>
   </body>
 </html>
