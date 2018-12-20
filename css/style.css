@@ -1,278 +1,79 @@
 @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
-/* line 9, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-1 {
-  width: calc(8.33333% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-2 {
-  width: calc(16.66667% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-3 {
-  width: calc(25% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-4 {
-  width: calc(33.33333% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-5 {
-  width: calc(41.66667% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-6 {
-  width: calc(50% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-7 {
-  width: calc(58.33333% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-8 {
-  width: calc(66.66667% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-9 {
-  width: calc(75% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-10 {
-  width: calc(83.33333% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-11 {
-  width: calc(91.66667% - 20px);
-}
-
-/* line 48, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.grid-12 {
-  width: calc(100% - 20px);
-}
-
-/* line 69, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-[class^="grid-"] {
-  float: left;
-  min-height: 1px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 759px) {
-  /* line 69, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-  [class^="grid-"] {
-    width: 100%;
-    float: none;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-1 {
-  margin-left: calc(8.33333% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-2 {
-  margin-left: calc(16.66667% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-3 {
-  margin-left: calc(25% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-4 {
-  margin-left: calc(33.33333% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-5 {
-  margin-left: calc(41.66667% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-6 {
-  margin-left: calc(50% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-7 {
-  margin-left: calc(58.33333% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-8 {
-  margin-left: calc(66.66667% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-9 {
-  margin-left: calc(75% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-10 {
-  margin-left: calc(83.33333% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-11 {
-  margin-left: calc(91.66667% + 10px);
-}
-
-/* line 76, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.offset-12 {
-  margin-left: calc(100% + 10px);
-}
-
-@media screen and (max-width: 759px) {
-  /* line 83, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-  .offset-1, .offset-2, .offset-3, .offset-4, .offset-5, .offset-6, .offset-7, .offset-8, .offset-9, .offset-10, .offset-11, .offset-12 {
-    margin-left: 0px;
-  }
-}
-
-/* line 114, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.container {
-  max-width: 1200px;
-  margin: 0px auto;
-  position: relative;
-}
-
-@media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 114, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-  .container {
-    max-width: 760px;
-  }
-}
-
-@media screen and (max-width: 759px) {
-  /* line 114, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-  .container {
-    max-width: 480px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-/* line 91, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.container::after, .container::before {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* line 129, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.row {
-  position: relative;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-@media screen and (max-width: 759px) {
-  /* line 129, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-  .row {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-/* line 91, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_grid.scss */
-.row::after, .row::before {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/*
-div {
-  background: rgba(0, 0, 0, 0.4);
-  min-height: 50px !important;
-  margin-bottom: 20px;
-}
-*/
-/* line 1, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_header.scss */
 html, body {
-  width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
 }
 section{
+  overflow: hidden;
+  background: white;
+}
+.min-height{
   min-height: 100vh;
 }
-/* line 9, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_header.scss */
-slider {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  overflow: hidden;
-  position: absolute;
-}
-
-/* line 19, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_header.scss */
-slider > * {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  animation: slide 12s infinite;
-  overflow: hidden;
-}
-
-/* line 30, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_header.scss */
-slide:nth-child(1) {
-  left: 0%;
-  animation-delay: -1s;
-  background-image: url("../img_site/Head/Imagem1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-/* line 38, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_header.scss */
-slide:nth-child(2) {
-  animation-delay: 2s;
-  background-image: url("../img_site/Head/Imagem2.png");
-  background-size: cover;
-  background-position: center;
-}
-
-/* line 45, D:/Estudos Casa/Projetos/Envo Vacinas/Site/css/scss/_header.scss */
-slide:nth-child(3) {
-  left: 0%;
-  animation-delay: 5s;
-  background-image: url("../img_site/Head/Imagem3.png");
-  background-size: cover;
-  background-position: center;
-}
-
 /*# sourceMappingURL=../style.map */
-
+ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  background: #032664;
+}
+header{
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+}
+.down-arrow{
+  width: 50px;
+  background-image: url(../img_site/Head/baixo.png);
+  height: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: 50%;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -25px;
+  cursor: pointer;
+}
+header .slider, header .slider .slide{
+  height: 100%;
+}
+.display-left{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 30pt;
+  transform: translate(0%,-50%);
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+}
+.display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  outline: none;
+  font-size: 30pt;
+  transform: translate(0%, -50%);
+  background: none;
+  border: none;
+  color: white;
+}
+header .bem-vindo{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 45px;
+  display: flex;
+  margin-left: 50%;
+  left: -459px;
+}
 /**
   * SECTION 1 NÃO É O HEADER ANIMALE
   */
 .title-evento{
+  padding: 117px 0 0 0;
   font-size: 36pt;
 }
 .sobre{
@@ -280,11 +81,6 @@ slide:nth-child(3) {
 }
 .sobre div{
   width: 100%;
-}
-.texto-sobre{
-  display:flex;
-  font-size: 17pt;
-  margin-top: 75px;
 }
 .texto-sobre li:nth-child(1){
   margin-right: 10px;
@@ -294,17 +90,12 @@ slide:nth-child(3) {
 }
 .cards-sobre{
   margin-top: 75px;
-  display: flex;
 }
 .cards-sobre .card{
   background: rgba(0, 0, 0, 0.11);
   border-radius: 15px;
   padding: 15px;
-  max-width: 292px;
-  min-height: 300px;
-}
-.cards-sobre .card:nth-child(1),.cards-sobre .card:nth-child(2){
-  margin-right: 35px;
+  min-height: 400px;
 }
 
 .cards-sobre .card .imagem_header{
@@ -316,4 +107,57 @@ slide:nth-child(3) {
 }
 .cards-sobre .card p{
   color: #8a8a8a;
+}
+.locais-atendimento{
+  background-image: url('../img_site/atendimento_contato/Padronagem Fundo.png');
+  color: white;
+  background-color: transparent;
+  padding-top: 50px ;
+}
+.locais-atendimento .bola{
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding: 10px;
+  background-size: 34%;
+  margin: 0 auto;
+}
+.locais-atendimento .conteudo{
+  text-align: center;
+  padding: 58px 0;
+}
+/*      CONTATO    */
+.contato{
+  background-color: #fff;
+  overflow: hidden;
+  padding: 50px 0 0 0;
+}
+.contato p {
+  color: #8e8e91;
+  font-size: 15pt;
+}
+.input{
+  border: 1px solid #9e9e9e;
+  border-radius: 21px;
+  margin-bottom: 20px;
+}
+.input input{
+  padding-left: 15px !important;
+}
+textarea{
+  border: 0;
+}
+
+.mapa{
+  background-image: url('../img_site/footer/mapa.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -30px;
+}
+.mapa .logo{
+  background-color: #4ed1d094;
+  padding: 133px 0;
 }
