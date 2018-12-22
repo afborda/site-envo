@@ -5,44 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" />
     <title>ENVO - Clinica de vacinação</title>
   </head>
-  <style>
-    .information{
-      color: white;
-      font-size: 9pt;
-      display: flex;
-      padding: 5px 0;
-    }
-    .information .info,.information .share{
-      display: flex;
-    }
-    .information .info div{
-      margin-right: 30px;
-    }
-    .info-telefone{
-      background-image: url(img_site/footer/telefone.png);
-      background-repeat: no-repeat;
-      padding-left: 10px;
-      background-position: 0 4px;
-      background-size: 8px;
-    }
-    .info-email{
-      background-image: url(img_site/footer/mail.png);
-      background-repeat: no-repeat;
-      padding-left: 12px;
-      background-position: 0 6px;
-      background-size: 8px;
-    }
-    .info-local{
-      background-image: url(img_site/footer/localizacao.png);
-      background-repeat: no-repeat;
-      padding-left: 12px;
-      background-position: 0 6px;
-      background-size: 8px;
-    }
-  </style>
   <body>
 <div class="information hide-on-med-and-down">
   <div class="container">
@@ -61,31 +28,28 @@
         </div>
       </div>
     </div>
-
-
   </div>
-
-
 </div>
-
   <header class="slide">
     <div class="container" >
         <nav class="nav-wrapper" >
           <a href="#" class="brand-logo"><img src="img_site/Head/logo.png"></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+          <ul  class="right hide-on-med-and-down">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Locais</a></li>
             <li><a href="#">Vacinas</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
-          <ul id="mobile-demo" class="sidenav">
+          <ul id="slide-out" class="sidenav">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Locais</a></li>
             <li><a href="#">Vacinas</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </nav>
 
     </div>
@@ -159,22 +123,22 @@
     <div class="container">
       <h4>Locais de Atendimento</h4>
       <div class="row">
-        <div class=" col m6 l3 conteudo">
+        <div class=" col s12 m6 l3 conteudo">
           <div class="bola " style="background-image: url(img_site/atendimento_contato/instituicao.png) ;">
         </div>
           <h5>Instituições de Ensino</h5>
         </div>
-        <div class=" col m6 l3 conteudo">
+        <div class=" col s12 m6 l3 conteudo">
           <div class="bola " style=" background-image: url(img_site/atendimento_contato/Empresas.png);    background-size: 26%;">
           </div>
           <h5>Empresas</h5>
         </div>
-        <div class=" col m6 l3 conteudo">
+        <div class=" col s12 m6 l3 conteudo">
           <div class="bola" style="   background-image: url(img_site/atendimento_contato/pessoa.png)">
           </div>
   <h5>Nosso Espaço</h5>
         </div>
-        <div class=" col m6 l3 conteudo">
+        <div class=" col s12 m6 l3 conteudo">
           <div class="bola" style="   background-image: url(img_site/atendimento_contato/casa.png)">
           </div>
           <h5>Home Care</h5>
@@ -225,19 +189,19 @@
   <section class="mapa">
       <div class="logo">
         <div class="row">
-          <div class="container">
-            <div class="col m1"></div>
-            <div class="col m1"></div>
-            <div class="col m1"></div>
-            <div class="col m1"></div>
-            <div class="col m1"></div>
-            <div class="col m1">
-              <img src="img_site/footer/localizacao-grande.png" height="52" width="40"/>
+          <div class="col m6 offset-m6">
+            <div class="row">
+              <div class="col">
+                <img src="img_site/footer/localizacao-grande.png" height="52" width="40"/>
+              </div>
+              <div class="col">
+                <img src="img_site/footer/logo-envo.png" height="58" width="282"/>
+              </div>
+
             </div>
-            <div class="col m6 ">
-              <img src="img_site/footer/logo-envo.png" height="58" width="282"/>
-            </div>
+
           </div>
+
         </div>
       </div>
   </section>
@@ -311,9 +275,6 @@
       </div>
     </div>
   </section>
-
-
-
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="js/slider.js"></script>

@@ -272,3 +272,36 @@ textarea{
   padding: 8px 0 0 0;
   height: 25px;
 }
+.information{
+  color: white;
+  font-size: 9pt;
+  display: flex;
+  padding: 5px 0;
+}
+.information .info,.information .share{
+  display: flex;
+}
+.information .info div{
+  margin-right: 30px;
+}
+.info-telefone{
+  background-image: url(../img_site/footer/telefone.png);
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  background-position: 0 4px;
+  background-size: 8px;
+}
+.info-email{
+  background-image: url(../img_site/footer/mail.png);
+  background-repeat: no-repeat;
+  padding-left: 12px;
+  background-position: 0 6px;
+  background-size: 8px;
+}
+.info-local{
+  background-image: url(../img_site/footer/localizacao.png);
+  background-repeat: no-repeat;
+  padding-left: 12px;
+  background-position: 0 6px;
+  background-size: 8px;
+}
