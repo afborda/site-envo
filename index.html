@@ -7,8 +7,64 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css" />
     <title>ENVO - Clinica de vacinação</title>
+
+    <link rel="stylesheet" href="css/libs/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="css/libs/assets/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      button:focus {
+        outline: none;
+        background-color: transparent !important;
+      }
+      .owl-dot {
+        margin-left: 5px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        padding: 5px;
+        color: white !important;
+        background: white !important;
+      }
+      .owl-dot.active{
+        border: solid #FFF 3px;
+        -moz-animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-name: ping;
+        -webkit-animation-name: ping;
+        animation: ping 1s infinite;
+      }
+      .owl-dots{
+        text-align: center;
+      }
+      @-webkit-keyframes ping {
+        from {
+          transform: scale(.25);
+          -ms-transform: scale(.25);
+          /* IE 9 */
+          -webkit-transform: scale(.25);
+          /* Safari and Chrome */
+          -o-transform: scale(.25);
+          /* Opera */
+          -moz-transform: scale(.25);
+          /* Firefox */
+          opacity: 1;
+        }
+        to {
+          transform: scale(1);
+          -ms-transform: scale(1);
+          /* IE 9 */
+          -webkit-transform: scale(1);
+          /* Safari and Chrome */
+          -o-transform: scale(1);
+          /* Opera */
+          -moz-transform: scale(1);
+          /* Firefox */
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
   <body>
 <div class="information hide-on-med-and-down">
@@ -23,7 +79,8 @@
       </div>
       <div class="col m1">
         <div class="share">
-          <div class="instagram-item" style="    margin-right: 13px;"><img src="img_site/footer/intagram-logo.png" height="10" width="10"/></div>
+          <div class="instagram-item" style="    margin-right: 13px;">
+            <img src="img_site/footer/intagram-logo.png" height="10" width="10" alt=""/></div>
           <div class="face-item"><img src="img_site/footer/face-logo.png" height="12" width="6"/></div>
         </div>
       </div>
@@ -31,7 +88,18 @@
   </div>
 </div>
   <header class="slide">
-    <div class="container" >
+    <div id="header-slider" class="owl-carousel" style="position: absolute">
+      <div>
+        <img src="img_site/Head/slider/Imagem1.png" alt="imagem header envo" style="height: 100vh;">
+      </div>
+      <div>
+        <img src="img_site/Head/slider/Imagem2.png" alt="imagem header envo" style="height: 100vh;">
+      </div>
+      <div>
+        <img src="img_site/Head/slider/Imagem3.png" alt="imagem header envo" style="height: 100vh;">
+      </div>
+    </div>
+    <div class="container" style="position: relative;z-index: 999;">
         <nav class="nav-wrapper" >
           <a href="#" class="brand-logo"><img src="img_site/Head/logo.png"></a>
 
@@ -53,10 +121,8 @@
         </nav>
 
     </div>
-    <button class="display-left" onclick="addCountImage(-1)"><img src="img_site/Head/esquerda.png" height="39"
-                                                                  width="19"/></button>
-    <button class="display-right" onclick="addCountImage(+1)"><img src="img_site/Head/direita.png" height="39"
-                                                                   width="19"/></button>
+
+
   </header>
   <section class="min-height">
     <div class="down-arrow"></div>
@@ -220,7 +286,7 @@
         </div>
         <div class="col m12 l8">
           <h6>Depoimentos</h6>
-          <div class="slider-depoimentos">
+          <div class="slider-depoimentos owl-carousel">
             <div class="slider-item mensagem">
               <p>A clínica presta um otímo trabalho eprimei  de qualidade, indico para pessoas que estão procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
               <div class="infomensagem">
@@ -242,17 +308,7 @@
                 <div class="cidade">SãoLeopoldo/RS</div>
               </div>
             </div>
-
           </div>
-          <div class="nav-slider">
-            <div class="it">
-              <span class="nav-depoimentos" onclick="currentDiv(1)"></span>
-              <span class="nav-depoimentos" onclick="currentDiv(2)"></span>
-              <span class="nav-depoimentos" onclick="currentDiv(3)"></span>
-            </div>
-
-          </div>
-
         </div>
       </div>
     </div>
@@ -277,30 +333,59 @@
   </section>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/slider-depoimentos.js"></script>
+  <script src="js/libs/jquery-3.3.1.js"></script>
+  <script src="js/libs/owl.carousel.js"></script>
   <script>
     var options= {};
       document.addEventListener('DOMContentLoaded', function() {
           var elems = document.querySelectorAll('.sidenav');
           var instances = M.Sidenav.init(elems, options);
       });
-    /*************************************************/
-    /*****************slider header *******************/
-    /*************************************************/
-    var slider =[
-        "url('img_site/Head/slider/Imagem1.png')",
-        "url('img_site/Head/slider/Imagem2.png')",
-        "url('img_site/Head/slider/Imagem3.png')"
-    ];
-    var slideIndex = 0;
-    showImageSlider(slideIndex);
-    carousel();
-    /*************************************************/
-    /**************** slider depoimentos *************/
-    /*************************************************/
-    var slideDepoIndex = 0;
-    showDivs(slideDepoIndex);
+    $(document).ready(function(){
+      $("#header-slider").owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        dots:false,
+        navText: [
+                '    <button class="display-left" onclick=""><img src="img_site/Head/esquerda.png" height="39"\n' +
+                '                                                                  width="19"/></button>'
+                ,' <button class="display-right" ><img src="img_site/Head/direita.png" height="39" width="19"/></button>'
+        ],
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:1
+          },
+          1000:{
+            items:1
+          }
+        }
+      });
+      $(".slider-depoimentos").owlCarousel({
+        loop:true,
+        margin:5,
+        nav:false,
+        dots:true,
+        responsive:{
+          0:{
+            items:1
+          },
+          300:{
+            items:1
+          },
+          600:{
+            items:1
+          },
+          1000:{
+            items:1
+          }
+        }
+      });
+
+    });
   </script>
   </body>
 </html>
