@@ -2,6 +2,7 @@
 html, body {
   padding: 0;
   margin: 0;
+
 }
 textarea:focus{
   outline: none;
@@ -42,7 +43,7 @@ header{
 header .slider, header .slider .slide{
   height: 100%;
 }
-.display-left{
+.owl-prev{
   position: absolute;
   top: 50%;
   left: 0;
@@ -53,7 +54,7 @@ header .slider, header .slider .slide{
   color: white;
   outline: none;
 }
-.display-right {
+.owl-next {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -71,6 +72,10 @@ header .bem-vindo{
   display: flex;
   margin-left: 50%;
   left: -459px;
+}
+.insta-envo{
+  font-size: 30pt !important;
+  color: rgba(107, 202, 202, 255)!important;
 }
 /**
   * SECTION 1 NÃO É O HEADER ANIMALE
@@ -95,14 +100,9 @@ header .bem-vindo{
   margin-top: 75px;
 }
 .cards-sobre .card{
-  background: rgba(0, 0, 0, 0.11);
   border-radius: 15px;
   padding: 15px;
-  min-height: 400px;
-}
-
-.cards-sobre .card .imagem_header{
-  padding: 10px 0 30px;;
+  min-height: 321px;
 }
 .cards-sobre .card h1{
   font-size: 19pt;
@@ -119,8 +119,8 @@ header .bem-vindo{
 }
 .locais-atendimento .bola{
   background: white;
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -282,7 +282,7 @@ textarea{
   display: flex;
 }
 .information .info div{
-  margin-right: 30px;
+  margin-right: 17px;
 }
 .info-telefone{
   background-image: url(../img_site/footer/telefone.png);
@@ -304,4 +304,83 @@ textarea{
   padding-left: 12px;
   background-position: 0 6px;
   background-size: 8px;
+}
+.info-horario{
+  background-image: url(../img_site/Head/horario-icon.png);
+  background-repeat: no-repeat;
+  padding-left: 12px;
+  background-position: 0 6px;
+  background-size: 8px;
+  margin-right: 16px;
+  margin-left: 15px;
+}
+.animate{
+  opacity: 0;
+}
+.slideInLeft{
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  /*animation-delay: .5s;*/
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.instagram-item-info{
+  margin-left: 21px;
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  /*animation-delay: .5s;*/
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.welcome{
+  position: absolute;
+  z-index: 99;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .footer h6{
+    text-align: center;
+  }
+  .footer ol{
+    float:left;
+    margin-left: 50%;
+    transform:translateX(-50%);
+  }
+  .welcome{
+    display:none;
+  }
 }
