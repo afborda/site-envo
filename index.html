@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -11,381 +11,426 @@
 
     <link rel="stylesheet" href="css/libs/assets/owl.theme.default.css">
     <link rel="stylesheet" href="css/libs/assets/owl.carousel.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
 
     <style>
-      button:focus {
-        outline: none;
-        background-color: transparent !important;
-      }
-      .owl-dot {
-        margin-left: 5px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        padding: 5px;
-        color: white !important;
-        background: white !important;
-      }
-      .owl-dot.active{
-        border: solid #FFF 3px;
-        -moz-animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        -moz-animation-name: ping;
-        -webkit-animation-name: ping;
-        animation: ping 1s infinite;
-      }
-      .owl-dots{
-        text-align: center;
-      }
-      @-webkit-keyframes ping {
-        from {
-          transform: scale(.25);
-          -ms-transform: scale(.25);
-          /* IE 9 */
-          -webkit-transform: scale(.25);
-          /* Safari and Chrome */
-          -o-transform: scale(.25);
-          /* Opera */
-          -moz-transform: scale(.25);
-          /* Firefox */
-          opacity: 1;
+        button:focus {
+            outline: none;
+            background-color: transparent !important;
         }
-        to {
-          transform: scale(1);
-          -ms-transform: scale(1);
-          /* IE 9 */
-          -webkit-transform: scale(1);
-          /* Safari and Chrome */
-          -o-transform: scale(1);
-          /* Opera */
-          -moz-transform: scale(1);
-          /* Firefox */
-          opacity: 0;
+
+        .owl-dot {
+            margin-left: 5px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            padding: 5px;
+            color: white !important;
+            background: white !important;
         }
-      }
+
+        .owl-dot.active {
+            border: solid #FFF 3px;
+            -moz-animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            -moz-animation-name: ping;
+            -webkit-animation-name: ping;
+            animation: ping 1s infinite;
+        }
+
+        .owl-dots {
+            text-align: center;
+        }
+
+        .owl-nav {
+            /*display:none;*/
+        }
+
+        @-webkit-keyframes ping {
+            from {
+                transform: scale(.25);
+                -ms-transform: scale(.25);
+                /* IE 9 */
+                -webkit-transform: scale(.25);
+                /* Safari and Chrome */
+                -o-transform: scale(.25);
+                /* Opera */
+                -moz-transform: scale(.25);
+                /* Firefox */
+                opacity: 1;
+            }
+            to {
+                transform: scale(1);
+                -ms-transform: scale(1);
+                /* IE 9 */
+                -webkit-transform: scale(1);
+                /* Safari and Chrome */
+                -o-transform: scale(1);
+                /* Opera */
+                -moz-transform: scale(1);
+                /* Firefox */
+                opacity: 0;
+            }
+        }
+
+        .card {
+            background: #f7f7f8;
+        }
     </style>
-  </head>
-  <body>
-<div class="information hide-on-med-and-down">
-  <div class="container">
-    <div class="row" style="margin:0;">
-      <div class="col m11">
-        <div class="info">
-          <div class="info-telefone">(51)99721-9419</div>
-          <div class="info-email">contato@envovacinas.com.br</div>
-          <div class="info-local" style="margin-right: 0;">Rua Independência, 1331-Centro-São Leopoldo/RS</div>
+</head>
+<body>
+<div class="information hide-on-med-and-down slideInLeft">
+    <div class="container">
+        <div class="row" style="margin:0;">
+            <div class="col m11">
+                <div class="info">
+                    <div class="info-telefone">(51)99721-9419</div>
+                    <div class="info-email">contato@envovacinas.com.br</div>
+                    <div class="info-local" style="margin-right: 0;">Rua Independência, 1331-Centro-São Leopoldo/RS
+                    </div>
+                    <div class="info-horario">09:00 às 12:00/13:00 às 18:00</div>
+                </div>
+            </div>
+            <div class="col m1">
+                <div class="share">
+                    <div class="instagram-item-info" style="    margin-right: 13px;">
+                        <img src="img_site/footer/intagram-logo.png" height="10" width="10" alt=""/></div>
+                    <div class="face-item"><img src="img_site/footer/face-logo.png" height="12" width="6"/></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col m1">
-        <div class="share">
-          <div class="instagram-item" style="    margin-right: 13px;">
-            <img src="img_site/footer/intagram-logo.png" height="10" width="10" alt=""/></div>
-          <div class="face-item"><img src="img_site/footer/face-logo.png" height="12" width="6"/></div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
-  <header class="slide">
+<header id="home" class="slide">
     <div id="header-slider" class="owl-carousel" style="position: absolute">
-      <div>
-        <img src="img_site/Head/slider/Imagem1.png" alt="imagem header envo" style="height: 100vh;">
-      </div>
-      <div>
-        <img src="img_site/Head/slider/Imagem2.png" alt="imagem header envo" style="height: 100vh;">
-      </div>
-      <div>
-        <img src="img_site/Head/slider/Imagem3.png" alt="imagem header envo" style="height: 100vh;">
-      </div>
+        <div>
+            <img src="img_site/Head/slider/Imagem1.png" alt="imagem header envo">
+        </div>
+        <div>
+            <img src="img_site/Head/slider/Imagem2.png" alt="imagem header envo">
+        </div>
+        <div>
+            <img src="img_site/Head/slider/Imagem3.png" alt="imagem header envo">
+        </div>
     </div>
     <div class="container" style="position: relative;z-index: 999;">
-        <nav class="nav-wrapper" >
-          <a href="#" class="brand-logo"><img src="img_site/Head/logo.png"></a>
+        <nav class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="img_site/Head/logo.png"></a>
 
-          <ul  class="right hide-on-med-and-down">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Locais</a></li>
-            <li><a href="#">Vacinas</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-          <ul id="slide-out" class="sidenav">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Locais</a></li>
-            <li><a href="#">Vacinas</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home" class="menu" data-go="#home">Inicio</a></li>
+                <li><a href="#" onclick=" $('html,body').animate({scrollTop: $('#after-slide').offset().top},'slow');">Sobre</a></li>
+                <li><a href="#locais" class="menu" onclick=" $('html,body').animate({scrollTop: $('#locais').offset().top},'slow');">Locais</a></li>
+                <li><a href="#">Vacinas</a></li>
+                <li><a href="#contato" class="menu" onclick=" $('html,body').animate({scrollTop: $('#contato').offset().top},'slow');">Contato</a></li>
+            </ul>
+            <ul id="slide-out" class="sidenav">
+                <li><a href="#home" class="menu" onclick=" $('html,body').animate({scrollTop: $('#home').offset().top},'slow');">Inicio</a></li>
+                <li><a href="#" onclick=" $('html,body').animate({scrollTop: $('#after-slide').offset().top},'slow');">Sobre</a></li>
+                <li><a href="#locais" class="menu" onclick=" $('html,body').animate({scrollTop: $('#locais').offset().top},'slow');">Locais</a></li>
+                <li><a href="#">Vacinas</a></li>
+                <li><a href="#contato" class="menu" onclick=" $('html,body').animate({scrollTop: $('#contato').offset().top},'slow');">Contato</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </nav>
-
     </div>
-
-
-  </header>
-  <section class="min-height">
+    <img src="img_site/Head/bem-vindo.png" class="welcome" height="89" width="918"/>
+</header>
+<section id="after-slide">
     <div class="down-arrow"></div>
-      <div class="container" >
-          <div>
-            <p class="title-evento">Sobre a Envo</p>
-          </div>
+    <div class="container">
+        <div>
+            <p class="title-evento title-about animate">Sobre a Envo</p>
+        </div>
         <div class="texto-sobre row" style="margin-top: 75px">
-          <div class="col s12 l6">
-            <p class="texto">
-              Lorem ipsum quisque dictum quisque euismod aenean quam, class etiam enim ut tempus nam,
-              massa lorem inceptos porttitor himenaeos pellentesque. adipiscing integer enim vitae leo faucibus consequat, torquent scelerisque accumsan auctor habitant,
-              arcu metus aliquam ante curabitur. platea habitant malesuada per posuere at condimentum convallis primis sodales morbi donec lectus eu dictumst sodales
-            </p>
-          </div>
-          <div class="col s12 l6">
-            <p class="texto">
-              Lorem ipsum quisque dictum quisque euismod aenean quam, class etiam enim ut tempus nam,
-              massa lorem inceptos porttitor himenaeos pellentesque. adipiscing integer enim vitae leo faucibus consequat, torquent scelerisque accumsan auctor habitant,
-              arcu metus aliquam ante curabitur. platea habitant malesuada per posuere at condimentum convallis primis sodales morbi donec lectus eu dictumst sodales
-            </p>
-          </div>
+            <div class="col s12 l6 about-left animate">
+                <p class="texto">
+                    A Envo Clínica de Vacinas garante serviço especializado na aplicação de vacinas para todas as
+                    idades. Nosso foco vai desde o atendimento particular em nosso espaço, atendimento empresarial,
+                    instituições de ensino (da educação infantil ao ensino médio) até o home care (atendimento a
+                    domicílio).
+                    <br><br>
+                    Na Envo, são oferecidas todas as vacinas indicadas pela Sociedade Brasileira de Imunizações - SBIm.
+                </p>
+            </div>
+            <div class="col s12 l6 about-right animate">
+                <p class="texto">
+                    Trabalhamos com um controle rigoroso na conservação de nossas vacinas.
+                    <br><br>
+                    Nosso propósito é levar ao cliente atendimento humanizado, segurança, confiança e cuidado,
+                    compreendendo com excelência a necessidade de cada um. A Envo tem em um de seus pilares mais
+                    importantes, levar o melhor atendimento para tornar ainda melhor a experiência da prevenção de
+                    doenças, e assim, garantindo bem-estar e qualidade de vida aos nossos clientes.
+                </p>
+            </div>
         </div>
         <div class="row cards-sobre">
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="imagem_header">
-                <img src="img_site/Sobre/missao.png" alt="">
-              </div>
-              <h1>Missão</h1>
-              <p>
-                Ser reconhecida no Rio Grande do Sul pelo melhor atendimento
-                humanizado e qualidade superior na prevenção de doenças.
-              </p>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="imagem_header">
-                <img src="img_site/Sobre/visao.png" alt="">
-              </div>
-              <h1>Visão</h1>
-              <p>
-                Levar qualidade e atendimento superior ao público, fazendo com que
-                a experiência de prevenção aconteça de forma tranquila e personalizada.
-              </p>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="imagem_header">
-                <img src="img_site/Sobre/valores.png" alt="">
-              </div>
-              <h1>Valores</h1>
-              <p>
-                Confiança, segurança, carinho e cuidado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="locais-atendimento">
-    <div class="container">
-      <h4>Locais de Atendimento</h4>
-      <div class="row">
-        <div class=" col s12 m6 l3 conteudo">
-          <div class="bola " style="background-image: url(img_site/atendimento_contato/instituicao.png) ;">
-        </div>
-          <h5>Instituições de Ensino</h5>
-        </div>
-        <div class=" col s12 m6 l3 conteudo">
-          <div class="bola " style=" background-image: url(img_site/atendimento_contato/Empresas.png);    background-size: 26%;">
-          </div>
-          <h5>Empresas</h5>
-        </div>
-        <div class=" col s12 m6 l3 conteudo">
-          <div class="bola" style="   background-image: url(img_site/atendimento_contato/pessoa.png)">
-          </div>
-  <h5>Nosso Espaço</h5>
-        </div>
-        <div class=" col s12 m6 l3 conteudo">
-          <div class="bola" style="   background-image: url(img_site/atendimento_contato/casa.png)">
-          </div>
-          <h5>Home Care</h5>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="contato">
-    <div class="container">
-      <div class="row">
-        <div class="col m12 l6">
-          <h4>Contato</h4>
-          <p>Aqui você pode pedor seu orçamento ou tirar suas dúvidas, vamos lhe responder o mais rápido possível!</p>
-          <form action="post">
-            <div class="input">
-              <input type="text" placeholder="Nome">
-            </div>
-            <div class="input">
-              <input type="text" placeholder="seu@email.com">
-            </div>
-            <div class="row">
-              <div class="col  s6 m6">
-                <div class="input " >
-                  <input type="text" placeholder="Telefone">
+            <div class="col s12 m6 l4 ">
+                <div class="card card1 animate">
+                    <div class="imagem_header">
+                        <img src="img_site/Sobre/missao.png" alt="">
+                    </div>
+                    <h1>Missão</h1>
+                    <p>
+                        Ser reconhecida no Rio Grande do Sul pelo melhor atendimento
+                        humanizado e qualidade superior na prevenção de doenças.
+                    </p>
                 </div>
-              </div>
-              <div class="col s6 m6">
-                <div class="input " >
-
-                  <input type="text" placeholder="Assunto">
+            </div>
+            <div class="col s12 m6 l4 ">
+                <div class="card card2 animate">
+                    <div class="imagem_header">
+                        <img src="img_site/Sobre/visao.png" alt="">
+                    </div>
+                    <h1>Visão</h1>
+                    <p>
+                        Levar qualidade e atendimento superior ao público, fazendo com que
+                        a experiência de prevenção aconteça de forma tranquila e personalizada.
+                    </p>
                 </div>
-              </div>
-
             </div>
-            <div class="input">
-              <textarea style="border: none;">
-                Mensagem
-              </textarea>
+            <div class="col s12 m6 l4 ">
+                <div class="card card3 animate">
+                    <div class="imagem_header">
+                        <img src="img_site/Sobre/valores.png" alt="">
+                    </div>
+                    <h1>Valores</h1>
+                    <p>
+                        Confiança, segurança, carinho e cuidado.
+                    </p>
+                </div>
             </div>
-          </form>
         </div>
-        <div class="col m12 l6">
-          <h4>Siga-nos no Instagram e no Facebook!</h4>
-        </div>
-      </div>
     </div>
-  </section>
-  <section class="mapa">
-      <div class="logo">
+</section>
+<section id="locais" class="locais-atendimento">
+    <div class="container">
+        <h4>Locais de Atendimento</h4>
         <div class="row">
-          <div class="col m6 offset-m6">
-            <div class="row">
-              <div class="col">
-                <img src="img_site/footer/localizacao-grande.png" height="52" width="40"/>
-              </div>
-              <div class="col">
-                <img src="img_site/footer/logo-envo.png" height="58" width="282"/>
-              </div>
-
+            <div class=" col s12 m6 l3 conteudo bola1 animate">
+                <div class="bola   "
+                     style="background-image: url(img_site/atendimento_contato/instituicao.png) ;    background-size: 60%;">
+                </div>
+                <h5>Instituições de Ensino</h5>
             </div>
-
-          </div>
-
+            <div class=" col s12 m6 l3 bola2 conteudo animate">
+                <div class="bola "
+                     style=" background-image: url(img_site/atendimento_contato/Empresas.png);    background-size: 26%;">
+                </div>
+                <h5>Empresas</h5>
+            </div>
+            <div class=" col s12 m6 l3 bola3 conteudo animate">
+                <div class="bola " style="   background-image: url(img_site/atendimento_contato/pessoa.png)">
+                </div>
+                <h5>Nosso Espaço</h5>
+            </div>
+            <div class=" col s12 m6 l3 bola4 conteudo animate">
+                <div class="bola "
+                     style="   background-image: url(img_site/atendimento_contato/casa.png);    background-size: 52%;">
+                </div>
+                <h5>Home Care</h5>
+            </div>
         </div>
-      </div>
-  </section>
-  <section class="footer">
+    </div>
+</section>
+<section id="contato" class="contato">
     <div class="container">
-      <div class="row">
-        <div class="col m12 l4">
-          <h6>Fale conosco!</h6>
-          <ol class="text">
-            <li class="telefone-item">(51)99721-9419</li>
-            <li class="email-item">contato@envovacinas.com.br</li>
-            <li class="endereco-item">Rua Independência, 1331 <br>Centro - São Leopoldo/RS</li>
-            <li class="instagram-item">envivacinas</li>
-            <li class="face-item">envivacinas</li>
-          </ol>
+        <div class="row">
+            <div class="col m12 l6 animate form">
+                <h4>Contato</h4>
+                <p>Aqui você pode pedor seu orçamento ou tirar suas dúvidas, vamos lhe responder o mais rápido
+                    possível!</p>
+                <form action="post">
+                    <div class="input">
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="seu@email.com">
+                    </div>
+                    <div class="row">
+                        <div class="col  s6 m6">
+                            <div class="input ">
+                                <input type="text" placeholder="Telefone">
+                            </div>
+                        </div>
+                        <div class="col s6 m6">
+                            <div class="input ">
+
+                                <input type="text" placeholder="Assunto">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="input">
+                        <textarea style="border: none;"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col m12 l6 contact-right animate">
+                <h4>Siga-nos no Instagram e no Facebook!</h4>
+                <h4 class="insta-envo">@envovacinas</h4>
+                <div class="s12">
+                    <img src="img_site/atendimento_contato/Mockup.png" width="100%"/>
+                </div>
+
+            </div>
         </div>
-        <div class="col m12 l8">
-          <h6>Depoimentos</h6>
-          <div class="slider-depoimentos owl-carousel">
-            <div class="slider-item mensagem">
-              <p>A clínica presta um otímo trabalho eprimei  de qualidade, indico para pessoas que estão procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
-              <div class="infomensagem">
-                <div class="nome">Celso Silva</div>
-                <div class="cidade">SãoLeopoldo/RS</div>
-              </div>
+    </div>
+</section>
+<section id="mapa" class="mapa">
+    <div class="logo">
+        <div class="row">
+            <div class="col m4"></div>
+            <div class="col m7 animate mapa-icon">
+                <div class="row">
+                    <div class="col">
+                        <img src="img_site/footer/localizacao-grande.png" height="52" width="40"/>
+                    </div>
+                    <div class="col">
+                        <img src="img_site/footer/logo-envo.png" height="58" width="282"/>
+                    </div>
+                </div>
             </div>
-            <div class="slider-item mensagem">
-              <p>A clínica presta um otímo segundo trabalho e de qualidade, indico para pessoas que estão procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
-              <div class="infomensagem">
-                <div class="nome">Celso Silva</div>
-                <div class="cidade">SãoLeopoldo/RS</div>
-              </div>
-            </div>
-            <div class="slider-item mensagem">
-              <p>A clínica presta um otímo trabalho terceiro e de qualidade, indico para pessoas que estão procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
-              <div class="infomensagem">
-                <div class="nome">Celso Silva</div>
-                <div class="cidade">SãoLeopoldo/RS</div>
-              </div>
-            </div>
-          </div>
+            <div class="col m4"></div>
         </div>
-      </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col m12 l4 s12 animate footer-left">
+                <h6>Fale conosco!</h6>
+                <ol class="text">
+                    <li class="telefone-item">(51)99721-9419</li>
+                    <li class="email-item">contato@envovacinas.com.br</li>
+                    <li class="endereco-item">Rua Independência, 1331 <br>Centro - São Leopoldo/RS</li>
+                    <li class="instagram-item">envivacinas</li>
+                    <li class="face-item">envivacinas</li>
+                </ol>
+            </div>
+            <div class="col m12 l8 s12 animate footer-right">
+                <h6>Depoimentos</h6>
+                <div class="slider-depoimentos owl-carousel">
+                    <div class="slider-item mensagem">
+                        <p>A clínica presta um otímo trabalho eprimei de qualidade, indico para pessoas que estão
+                            procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
+                        <div class="infomensagem">
+                            <div class="nome">Celso Silva</div>
+                            <div class="cidade">SãoLeopoldo/RS</div>
+                        </div>
+                    </div>
+                    <div class="slider-item mensagem">
+                        <p>A clínica presta um otímo segundo trabalho e de qualidade, indico para pessoas que estão
+                            procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
+                        <div class="infomensagem">
+                            <div class="nome">Celso Silva</div>
+                            <div class="cidade">SãoLeopoldo/RS</div>
+                        </div>
+                    </div>
+                    <div class="slider-item mensagem">
+                        <p>A clínica presta um otímo trabalho terceiro e de qualidade, indico para pessoas que estão
+                            procurando este tipo de serviço, a Envo é a melhor de São Leopoldo!</p>
+                        <div class="infomensagem">
+                            <div class="nome">Celso Silva</div>
+                            <div class="cidade">SãoLeopoldo/RS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-  </section>
-  <section class="footer-copyright">
+</section>
+<section class="footer-copyright">
     <div class="container">
-      <div class="row">
-        <div class="col s8">
-          ©Envo-Clínica de Vacinas -2018
+        <div class="row">
+            <div class="col s8" style="    color: rgba(107, 203, 203, 255);">
+                ©Envo-Clínica de Vacinas -2018
+            </div>
+            <div class="col s4">
+                <div class="logo-prod">
+                    <div class="images">
+                        <img src="img_site/footer/abner-logo.png" height="25" width="28"/>
+                        <img src="img_site/footer/douglas-logo.png" height="25" width="17"/>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col s4">
-          <div class="logo-prod">
-           <div class="images">
-             <img src="img_site/footer/abner-logo.png" height="25" width="28"/>
-             <img src="img_site/footer/douglas-logo.png" height="25" width="17"/>
-           </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/libs/jquery-3.3.1.js"></script>
-  <script src="js/libs/owl.carousel.js"></script>
-  <script>
-    var options= {};
-      document.addEventListener('DOMContentLoaded', function() {
-          var elems = document.querySelectorAll('.sidenav');
-          var instances = M.Sidenav.init(elems, options);
-      });
-    $(document).ready(function(){
-      $("#header-slider").owlCarousel({
-        loop:true,
-        margin:0,
-        nav:true,
-        dots:false,
-        navText: [
-                '    <button class="display-left" onclick=""><img src="img_site/Head/esquerda.png" height="39"\n' +
-                '                                                                  width="19"/></button>'
-                ,' <button class="display-right" ><img src="img_site/Head/direita.png" height="39" width="19"/></button>'
-        ],
-        responsive:{
-          0:{
-            items:1
-          },
-          600:{
-            items:1
-          },
-          1000:{
-            items:1
-          }
-        }
-      });
-      $(".slider-depoimentos").owlCarousel({
-        loop:true,
-        margin:5,
-        nav:false,
-        dots:true,
-        responsive:{
-          0:{
-            items:1
-          },
-          300:{
-            items:1
-          },
-          600:{
-            items:1
-          },
-          1000:{
-            items:1
-          }
-        }
-      });
+</section>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/libs/jquery-3.3.1.js"></script>
+<script src="js/libs/owl.carousel.js"></script>
+<script src="js/libs/jquery.waypoints.js"></script>
+<script src="js/libs/shortcuts/inview.min.js"></script>
+<script src="js/menu.goTo.js"></script>
 
+<script src="js/animations.js"></script>
+<script>
+    var options = {};
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, options);
     });
-  </script>
-  </body>
+    $(document).ready(function () {
+        $("#header-slider").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: [
+                '<img src="img_site/Head/esquerda.png" height="39" width="19"/>'
+                , '<img src="img_site/Head/direita.png" height="39" width="19"/>'
+            ],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+        $(".slider-depoimentos").owlCarousel({
+            loop: true,
+            margin: 5,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                300: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+        var itemOwl = $('.owl-item');
+        $('.slide').css({
+            height: itemOwl.height()
+        });
+        $('.welcome').css({
+            marginTop: itemOwl.height() - 200
+        });
+        $(window).resize(() => {
+            $('.slide').css({
+                height: itemOwl.height()
+            });
+            $('.welcome').css({
+                marginTop: itemOwl.height() - 200
+            });
+        });
+    });
+</script>
+</body>
 </html>
