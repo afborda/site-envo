@@ -240,29 +240,32 @@
                 <h4>Contato</h4>
                 <p>Aqui você pode pedor seu orçamento ou tirar suas dúvidas, vamos lhe responder o mais rápido
                     possível!</p>
-                <form action="post">
+                <form action="/contato.php" method="post">
                     <div class="input">
-                        <input type="text" placeholder="Nome">
+                        <input type="text" name="name" placeholder="Nome">
                     </div>
                     <div class="input">
-                        <input type="text" placeholder="seu@email.com">
+                        <input type="text" name="email" placeholder="seu@email.com">
                     </div>
                     <div class="row">
                         <div class="col  s6 m6">
                             <div class="input ">
-                                <input type="text" placeholder="Telefone">
+                                <input type="text" name="phone" placeholder="Telefone">
                             </div>
                         </div>
                         <div class="col s6 m6">
                             <div class="input ">
 
-                                <input type="text" placeholder="Assunto">
+                                <input type="text" name="subject" placeholder="Assunto">
                             </div>
                         </div>
 
                     </div>
                     <div class="input">
-                        <textarea style="border: none;"></textarea>
+                        <textarea style="border: none;" name="message"></textarea>
+                    </div>
+                    <div class="button-envo">
+                        <input type="submit" value="enviar"/>
                     </div>
                 </form>
             </div>
@@ -364,8 +367,6 @@
 <script src="js/libs/owl.carousel.js"></script>
 <script src="js/libs/jquery.waypoints.js"></script>
 <script src="js/libs/shortcuts/inview.min.js"></script>
-<script src="js/menu.goTo.js"></script>
-
 <script src="js/animations.js"></script>
 <script>
     var options = {};
@@ -378,6 +379,9 @@
             loop: true,
             margin: 0,
             nav: true,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
             dots: false,
             navText: [
                 '<img src="img_site/Head/esquerda.png" height="39" width="19"/>'
@@ -399,6 +403,9 @@
             loop: true,
             margin: 5,
             nav: false,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
             dots: true,
             responsive: {
                 0: {
