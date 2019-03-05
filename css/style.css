@@ -384,3 +384,12 @@ textarea{
     display:none;
   }
 }
+.button-envo input[type=submit]{
+  border: none;
+  color: white;
+  background: #6bcaca;
+  padding: 15px;
+  width: 100%;
+  border-radius: 26px;
+  text-transform: uppercase;
+}
