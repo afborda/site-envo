@@ -11,7 +11,7 @@ $phone = $_POST['phone'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$mailto = 'mail@mail.com';
+$mailto = 'abner.borda@gmail.com';
 $message = "Telefone : $phone<br\>". $message;
 
 // a random hash will be necessary to send mixed content

@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
 html, body {
   padding: 0;
   margin: 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 
 }
 textarea:focus{
@@ -116,6 +116,7 @@ header .bem-vindo{
   color: white;
   background-color: transparent;
   padding-top: 50px ;
+  background-size: cover;
 }
 .locais-atendimento .bola{
   background: white;
@@ -274,7 +275,7 @@ textarea{
 }
 .information{
   color: white;
-  font-size: 9pt;
+  font-size: 10.5pt;
   display: flex;
   padding: 5px 0;
 }
